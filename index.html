@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="[성함]님 팔순 잔치에 초대합니다">
+    <meta property="og:description" content="2026년 00월 00일 오후 12시, 귀한 걸음 부탁드립니다.">
+    <meta property="og:image" content="이미지_경로.jpg"> ```
+
+
+    <title>팔순 잔치 초대장</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* 기본 스타일 리셋 */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Nanum+Myeongjo', serif;
+            background-color: #f9f7f2;
+            color: #333;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        /* 전체 컨테이너 */
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            background: #fff;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+
+        /* 섹션 공통 스타일 */
+        section { padding: 60px 20px; border-bottom: 1px solid #eee; }
+
+        /* 메인 상단 */
+        .main-header {
+            background-color: #fdfaf5;
+            padding: 80px 20px;
+        }
+        .main-header h2 { font-weight: 400; font-size: 1.2rem; letter-spacing: 5px; color: #8a7d6a; margin-bottom: 20px; }
+        .main-header h1 { font-size: 2.5rem; color: #4a3f35; margin-bottom: 20px; }
+        .main-header .date-text { font-size: 1.1rem; color: #666; }
+
+        /* 이미지 섹션 */
+        .photo-section img {
+            width: 90%;
+            border-radius: 5px;
+            filter: sepia(10%);
+        }
+
+        /* 인사말 */
+        .greeting-text { font-size: 1rem; color: #555; word-break: keep-all; }
+        .greeting-text strong { display: block; margin-bottom: 15px; font-size: 1.2rem; color: #333; }
+
+        /* 안내 사항 */
+        .info-list { list-style: none; text-align: left; display: inline-block; }
+        .info-list li { margin: 15px 0; font-size: 1.1rem; }
+        .info-list span { font-weight: bold; color: #8a7d6a; margin-right: 10px; width: 60px; display: inline-block; }
+
+        /* 지도 버튼 */
+        .map-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 30px;
+            background-color: #8a7d6a;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 0.9rem;
+        }
+
+        /* 하단 장식 */
+        footer { padding: 40px; background: #fdfaf5; font-size: 0.8rem; color: #999; }
+        
+        /* 스크롤 애니메이션 효과 (심플) */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <section class="main-header">
+        <h2>祝 傘壽宴</h2>
+        <h1>이점순님의 팔순잔치</h1>
+        <p class="date-text">[2025년 05월 09일]<br>오전 [11]시 [00]분</p>
+    </section>
+
+    <section class="photo-section">
+        <img src="https://via.placeholder.com/400x500?text=Elderly+Photo" alt="팔순 기념 사진">
+    </section>
+
+    <section class="fade-in">
+        <p class="greeting-text">
+            <strong>초대의 말씀</strong>
+            강물처럼 흐르는 세월 속에<br>
+            어느덧 저희 [아버지/어머니]께서<br>
+            여든 번째 생신을 맞이하셨습니다.<br><br>
+            오늘이 있기까지 베풀어 주신<br>
+            따뜻한 격려와 사랑에 감사드리는 마음으로<br>
+            작은 잔치를 마련하였습니다.<br><br>
+            귀한 걸음 하시어 자리를 빛내주시면<br>
+            더없는 기쁨이 되겠습니다.
+        </p>
+    </section>
+
+    <section class="fade-in">
+        <ul class="info-list">
+            <li><span>일시</span> [2025년 005월 09일 토요일 낮 11시]</li>
+            <li><span>장소</span> [더함뜰]</li>
+            <li><span>주소</span> [대전 유성구 동서대로 181]</li>
+            <li><span>전화</span> [0507-1402-9294]</li>
+        </ul>
+        <br>
+        <a href="https://map.kakao.com" class="map-btn" target="_blank">지도 보기 (카카오맵)</a>
+    </section>
+
+    <section class="fade-in" style="background: #fcfcfc;">
+        <h3 style="margin-bottom: 20px; font-size: 1rem; color: #8a7d6a;">마음 전하실 곳</h3>
+        <p style="font-size: 0.9rem;">[은행명] [000-0000-000000]<br>예금주: [성함]</p>
+    </section>
+
+    <footer>
+        <p>아들 [양서준], 며느리 [이은정]<br>딸 [이름], 사위 [이름] 배상</p>
+    </footer>
+</div>
+
+<script>
+    // 스크롤 시 요소가 나타나는 간단한 인터랙션
+    const observerOptions = { threshold: 0.2 };
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>

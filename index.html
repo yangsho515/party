@@ -77,6 +77,43 @@
             opacity: 1;
             transform: translateY(0);
         }
+        /* 정보 영역 컨테이너 */
+        .info-wrapper {
+            display: inline-block;
+            text-align: left;
+            margin-bottom: 20px;
+            width: 100%;
+            max-width: 320px; /* 너무 퍼지지 않게 너비 제한 */
+        }
+
+        .info-row {
+            display: flex;
+            align-items: flex-start; /* 글자가 여러 줄일 때 위쪽 정렬 */
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+
+        .info-row .label {
+            font-weight: bold;
+            color: #8a7d6a;
+            width: 50px; /* '일시', '장소' 글자 너비 고정 */
+            flex-shrink: 0;
+        }
+
+        .info-row .content {
+            color: #333;
+            line-height: 1.4;
+            word-break: keep-all; /* 단어 단위로 줄바꿈 */
+        }
+
+        /* 빨간색 안내 문구 스타일 */
+        .notice-text {
+            color: #d9534f; /* 너무 쨍하지 않은 세련된 빨간색 */
+            font-size: 0.9rem;
+            margin: 10px 0 25px 0;
+            line-height: 1.5;
+            word-break: keep-all;
+        }
     </style>
 </head>
 <body>
@@ -108,18 +145,41 @@
     </section>
 
     <section class="fade-in">
-        <ul class="info-list">
-            <li><span>일시</span> 2026년 05월 09일 토요일 오전 11시 30분</li>
-            <li><span>장소</span> 더함뜰</li>
-            <li><span>주소</span> 대전 유성구 동서대로 181</li>
-            <li><span>전화</span> 0507-1402-9294</li>
-        </ul>
-        <br>
-        <a href="https://map.kakao.com/link/to/더함뜰,36.3478,127.3204" class="map-btn" target="_blank">지도 보기 (카카오맵)</a>
-    </section>
+    <div class="info-wrapper">
+        <div class="info-row">
+            <span class="label">일시</span>
+            <div class="content">
+                2026년 05월 09일(토)<br>
+                오전 11시 30분
+            </div>
+        </div>
+        <div class="info-row">
+            <span class="label">장소</span>
+            <div class="content">더함뜰</div>
+        </div>
+        <div class="info-row">
+            <span class="label">주소</span>
+            <div class="content">대전 유성구 동서대로 181</div>
+        </div>
+        <div class="info-row">
+            <span class="label">전화</span>
+            <div class="content">0507-1402-9294</div>
+        </div>
+    </div>
+
+    <p class="notice-text">
+        ※ 식사시간이 100분으로 정해져 있는 점<br>양해 부탁드리겠습니다.
+    </p>
+
+    <a href="https://search.naver.com/search.naver?where=nv&sm=top_sug.pre&fbm=0&acr=1&acq=%EB%8D%94%ED%95%A8%EB%9C%B0&qdt=0&ie=utf8&query=%EB%8D%94%ED%95%A8%EB%9C%B0&ackey=2szdarpa" 
+       class="map-btn" 
+       target="_blank">
+       장소 상세 정보 보기
+    </a>
+</section>
 
     <footer>
-        <p>첫째 양미경 · 사위 장희범</p>
+        <p>첫째 양미경 · 사위 (故) 장희범</p>
         <p>둘째 양서준 · 며느리 이은정</p>
         <p>셋째 양미성 · 사위 박승환</p>
         <p>넷째 양승미 · 사위 박태원</p>
